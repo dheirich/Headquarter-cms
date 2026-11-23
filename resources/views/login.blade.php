@@ -32,35 +32,27 @@
                 @csrf
 
                 <div class="mb-5">
-                    <label for="email" class="mb-2 block text-sm font-medium text-zinc-300">Email:</label>
+                    <x-ui.label for="email">Email:</x-ui.label>
+
                     <div class="w-full">
-                        <input id="email" name="email" type="email"
-                               class="w-full rounded-lg border border-white/15 bg-white/10 px-4 py-3 text-white outline-none focus:border-violet-400"
-                               value="{{old('email')}}"
-                               autocomplete="username" />
+                        <x-ui.input type="email" name="email" id="email" autocomplete="username" value="{{old('email')}}"/>
                     </div>
-                    @error('email')
-                        <p class="text-red-200 bg-red-800 px-4 py-2 border border-white/10 w-full text-center mt-2">{{$message}}</p>
-                    @enderror
+
+                    <x-ui.form-error field="email" />
                 </div>
 
                 <div class="mb-5">
-                    <label for="password" class="mb-2 block text-sm font-medium text-zinc-300">Password:</label>
+                    <x-ui.label for="password">Password:</x-ui.label>
+
                     <div class="w-full">
-                        <input id="password" name="password" type="password"
-                               class="w-full rounded-lg border border-white/15 bg-white/10 px-4 py-3 text-white outline-none focus:border-violet-400"
-                               autocomplete="current-password"/>
+                        <x-ui.input type="password" name="password" id="password" autocomplete="current-password"/>
                     </div>
-                    @error('password')
-                        <p class="text-red-200 bg-red-800 px-4 py-2 border border-white/10 w-full text-center mt-2">{{$message}}</p>
-                    @enderror
+
+                    <x-ui.form-error field="password" />
                 </div>
 
                 <div class="mt-4">
-                    <button class="w-full rounded-lg bg-white px-4 py-3 font-semibold text-zinc-950 transition-colors hover:bg-zinc-200"
-                            type="submit">
-                        Login
-                    </button>
+                    <x-ui.button type="submit">Login</x-ui.button>
                 </div>
             </form>
 

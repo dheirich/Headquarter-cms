@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="650" viewBox="0 0 700 650" role="img" aria-labelledby="title desc">
+<title id="title">Headquarter – Kristall-Emblem</title>
+<desc id="desc">Freigestelltes symmetrisches silberblaues Fantasy-Emblem aus editierbaren Vektorpfaden.</desc>
+<defs>
+<linearGradient id="silverA" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#ffffff"/><stop offset=".25" stop-color="#e5f6ff"/><stop offset=".52" stop-color="#8baac7"/><stop offset=".75" stop-color="#d8f1ff"/><stop offset="1" stop-color="#3d668a"/></linearGradient>
+<linearGradient id="silverB" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#faffff"/><stop offset=".4" stop-color="#b7dcf4"/><stop offset=".7" stop-color="#668cb0"/><stop offset="1" stop-color="#f2fbff"/></linearGradient>
+<linearGradient id="blueA" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d7faff"/><stop offset=".22" stop-color="#3ddaff"/><stop offset=".55" stop-color="#0777c0"/><stop offset="1" stop-color="#071a3a"/></linearGradient>
+<linearGradient id="ice" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#ffffff"/><stop offset=".45" stop-color="#c6f3ff"/><stop offset="1" stop-color="#5ba6db"/></linearGradient>
+<linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#123b60"/><stop offset=".55" stop-color="#041429"/><stop offset="1" stop-color="#061d37"/></linearGradient>
+</defs>
+<g id="headquarter-emblem" fill-rule="evenodd">
+<path id="core-silhouette" d="M350 13 L395 224 Q414 257 439 219 L460 153 Q486 198 485 280 L529 171 Q565 229 550 342 L632 291 Q610 396 510 472 L421 557 L350 637 L279 557 L190 472 Q90 396 68 291 L150 342 Q135 229 171 171 L215 280 Q214 198 240 153 L261 219 Q286 257 305 224 Z" fill="#071b32" stroke="#0a8ecb" stroke-width="2" stroke-linejoin="round" />
+<path id="outer-tall-blade-left" d="M144 353 Q151 244 217 102 Q180 212 194 308 L250 405 L211 430 Z" fill="url(#silverA)" stroke="#9deaff" stroke-width="2" stroke-linejoin="round" />
+<use id="outer-tall-blade-right" href="#outer-tall-blade-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="outer-tall-shadow-left" d="M166 342 Q175 246 217 102 Q188 245 207 337 L244 397 L211 411 Z" fill="url(#blueA)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<use id="outer-tall-shadow-right" href="#outer-tall-shadow-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="inner-tall-blade-left" d="M229 352 Q226 244 289 167 Q254 270 286 333 L328 438 L283 448 Z" fill="url(#silverB)" stroke="#72cafa" stroke-width="1.6" stroke-linejoin="round" />
+<use id="inner-tall-blade-right" href="#inner-tall-blade-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="inner-tall-shadow-left" d="M252 344 Q245 262 289 167 Q267 271 302 362 L326 431 L284 426 Z" fill="url(#navy)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<use id="inner-tall-shadow-right" href="#inner-tall-shadow-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="outer-spike-left" d="M143 397 Q93 382 34 309 Q64 410 166 481 L287 550 L240 484 Z" fill="url(#silverB)" stroke="#8de6ff" stroke-width="2" stroke-linejoin="round" />
+<use id="outer-spike-right" href="#outer-spike-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="outer-spike-facet-left" d="M34 309 L144 397 L205 464 Q113 415 34 309 Z" fill="url(#silverA)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<use id="outer-spike-facet-right" href="#outer-spike-facet-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="outer-spike-shadow-left" d="M144 397 L287 550 L202 496 L166 481 Z" fill="url(#blueA)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<use id="outer-spike-shadow-right" href="#outer-spike-shadow-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="mid-spike-left" d="M178 407 Q133 346 104 184 Q96 311 135 396 L268 530 L315 559 L258 461 Z" fill="url(#silverA)" stroke="#78dfff" stroke-width="2" stroke-linejoin="round" />
+<use id="mid-spike-right" href="#mid-spike-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="mid-spike-highlight-left" d="M104 184 Q119 324 179 406 L250 471 Q164 382 104 184 Z" fill="url(#ice)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<use id="mid-spike-highlight-right" href="#mid-spike-highlight-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="mid-spike-shadow-left" d="M179 406 L258 461 L315 559 L268 530 Z" fill="url(#blueA)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<use id="mid-spike-shadow-right" href="#mid-spike-shadow-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="wing-main-left" d="M162 451 L214 479 L273 524 L340 627 Q249 565 159 522 L88 461 L64 388 Q112 427 162 451 Z" fill="url(#silverA)" stroke="#93e7ff" stroke-width="2" stroke-linejoin="round" />
+<use id="wing-main-right" href="#wing-main-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="wing-top-facet-left" d="M64 388 L162 451 L214 479 L157 476 Q109 446 64 388 Z" fill="url(#ice)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<use id="wing-top-facet-right" href="#wing-top-facet-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="wing-bottom-facet-left" d="M157 476 L214 479 L340 627 Q240 544 159 522 L88 461 Z" fill="url(#blueA)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<use id="wing-bottom-facet-right" href="#wing-bottom-facet-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="lower-needle-left" d="M209 423 Q262 458 308 514 L350 622 L299 558 L244 511 Z" fill="url(#silverB)" stroke="#87ddff" stroke-width="1.3" stroke-linejoin="round" />
+<use id="lower-needle-right" href="#lower-needle-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="lower-needle-facet-left" d="M209 423 L308 514 L350 622 L300 548 Z" fill="url(#ice)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<use id="lower-needle-facet-right" href="#lower-needle-facet-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="guard-left" d="M288 368 Q247 347 237 304 Q240 242 285 191 Q268 260 299 297 Q310 306 319 283 L339 245 L348 417 L327 520 Z" fill="url(#silverA)" stroke="#a6edff" stroke-width="1.8" stroke-linejoin="round" />
+<use id="guard-right" href="#guard-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="guard-inner-left" d="M285 191 Q268 260 299 297 Q313 312 325 284 L339 245 L340 449 L309 376 Q276 341 285 191 Z" fill="url(#navy)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<use id="guard-inner-right" href="#guard-inner-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="guard-edge-left" d="M237 304 Q248 351 288 368 L327 520 L304 423 Q265 370 237 304 Z" fill="url(#blueA)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<use id="guard-edge-right" href="#guard-edge-left" transform="translate(700 0) scale(-1 1)"/>
+<path id="center-outer" d="M350 7 L409 239 L383 275 L369 371 L360 555 L350 631 L340 555 L331 371 L317 275 L291 239 Z" fill="url(#silverA)" stroke="#b9f5ff" stroke-width="2.4" stroke-linejoin="round" />
+<path id="center-left-facet" d="M350 7 L350 631 L333 372 L317 275 L291 239 Z" fill="url(#silverB)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<path id="center-right-facet" d="M350 7 L409 239 L383 275 L369 371 L350 631 Z" fill="url(#silverA)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<path id="center-base-shadow" d="M317 275 L337 294 L350 631 L331 371 Z" fill="url(#navy)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<path id="center-base-light" d="M383 275 L363 294 L350 631 L369 371 Z" fill="url(#blueA)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<path id="gem-halo" d="M350 131 L377 246 L350 296 L323 246 Z" fill="#0795e7" stroke="#a4f6ff" stroke-width="2" stroke-linejoin="round" />
+<path id="gem-left" d="M350 131 L350 296 L323 246 Z" fill="url(#ice)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<path id="gem-right" d="M350 131 L377 246 L350 296 Z" fill="url(#blueA)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<path id="gem-bright" d="M350 160 L363 244 L350 268 L337 244 Z" fill="#23c8ff" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<path id="gem-specular" d="M350 160 L350 268 L337 244 Z" fill="#d9ffff" stroke="none" stroke-width="0" stroke-linejoin="round" />
+<path id="bottom-center" d="M350 476 L359 556 L350 616 L341 556 Z" fill="url(#blueA)" stroke="none" stroke-width="0" stroke-linejoin="round" />
+</g></svg>

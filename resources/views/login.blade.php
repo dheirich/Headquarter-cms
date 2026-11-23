@@ -28,7 +28,7 @@
                 Please log in
             </p>
 
-            <form class="mx-auto w-full max-w-md" method="POST" action="/auth/login">
+            <form class="mx-auto w-full max-w-md" method="POST" action="{{ route('auth.login') }}">
                 @csrf
 
                 <div class="mb-5">
@@ -36,8 +36,12 @@
                     <div class="w-full">
                         <input id="email" name="email" type="email"
                                class="w-full rounded-lg border border-white/15 bg-white/10 px-4 py-3 text-white outline-none focus:border-violet-400"
-                               autocomplete="username"/>
+                               value="{{old('email')}}"
+                               autocomplete="username" />
                     </div>
+                    @error('email')
+                        <p class="text-red-200 bg-red-800 px-4 py-2 border border-white/10 w-full text-center mt-2">{{$message}}</p>
+                    @enderror
                 </div>
 
                 <div class="mb-5">
@@ -47,6 +51,9 @@
                                class="w-full rounded-lg border border-white/15 bg-white/10 px-4 py-3 text-white outline-none focus:border-violet-400"
                                autocomplete="current-password"/>
                     </div>
+                    @error('password')
+                        <p class="text-red-200 bg-red-800 px-4 py-2 border border-white/10 w-full text-center mt-2">{{$message}}</p>
+                    @enderror
                 </div>
 
                 <div class="mt-4">

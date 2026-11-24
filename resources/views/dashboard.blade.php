@@ -1,3 +1,2 @@
-<x-layouts.app>
-    <h1>Hallo Welt</h1>
+<x-layouts.app title="Headquarter | Dashboard">
 </x-layouts.app>

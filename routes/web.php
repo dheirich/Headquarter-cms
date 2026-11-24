@@ -22,18 +22,18 @@ Route::middleware('auth')->group(function () {
 
     // Management Routes Testing
 
-    Route::view('/manage-members', 'components.navigation_dashboard.manage-members')
+    Route::view('/manage-members', 'management.manage-members')
         ->name('manage-members');
 
-    Route::view('/promoting-members', 'components.navigation_dashboard.promoting-members')
+    Route::view('/promoting-members', 'management.promoting-members')
         ->name('promoting-members');
 
-    Route::view('/ban-lists', 'components.navigation_dashboard.ban-lists')
+    Route::view('/ban-lists', 'management.ban-lists')
         ->name('ban-lists');
 
-    Route::view('/manage-squads', 'components.navigation_dashboard.manage-squads')
+    Route::view('/manage-squads', 'management.manage-squads')
         ->name('manage-squads');
 
-    Route::view('/manage-teams', 'components.navigation_dashboard.manage-teams')
+    Route::view('/manage-teams', 'management.manage-teams')
         ->name('manage-teams');
 });

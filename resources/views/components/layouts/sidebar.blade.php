@@ -31,9 +31,9 @@
         </a>
 
             <div class="w-full py-6" x-data="{ open: @json($isManagementActive) }">
-                <x-ui.button type="button" variant="navigation" x-on:click="open = !open">Management</x-ui.button>
+                <x-ui.button type="button" variant="navigation" x-on:click="open = !open" x-bind:aria-expanded="open">Management</x-ui.button>
 
-                <ul class="flex flex-col w-full text-center gap-2 text-sm mt-4" x-show="open" x-transition>
+                <ul class="flex flex-col w-full text-center gap-2 text-sm mt-4" x-show="open" x-transition x-cloak>
                     <x-ui.link route-name="manage-members">Member Management</x-ui.link>
                     <x-ui.link route-name="promoting-members">Promoting Members</x-ui.link>
                     <x-ui.link route-name="ban-lists">Ban Lists</x-ui.link>

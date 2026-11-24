@@ -1,2 +1,2 @@
-<x-layouts.app title="Headquarter | Dashboard">
+<x-layouts.app title="Dashboard">
 </x-layouts.app>

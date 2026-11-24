@@ -1,3 +1,7 @@
+@php
+    $isActive = request()->routeIs('dashboard');
+@endphp
+
 <aside class="w-64 shrink-0 flex flex-col bg-zinc-900">
 
     <div class="mt-8 w-full flex items-center flex-col gap-2 px-4  border-b border-white/10 pb-4">
@@ -7,7 +11,15 @@
     </div>
 
     <x-layouts.sidebar-nav>
-                <a class="border border-lime-400 py-2 text-white text-center rounded-2xl text-xl font-medium" href="{{ route('dashboard') }}">Dashboard</a>
+                <a
+                    href="{{ route('dashboard') }}"
+                @class([
+                    'border py-2 text-white text-center rounded-2xl text-xl font-medium',
+                    'border-lime-400' => $isActive,
+                    'border-transparent' => !$isActive
+                ])>
+                    Dashboard
+                </a>
 
 
             <div class="w-full py-6">

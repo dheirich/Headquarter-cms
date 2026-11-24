@@ -1,5 +1,15 @@
 @php
+
     $isActive = request()->routeIs('dashboard');
+
+    $isManagementActive = request()->routeIs([
+        'manage-members',
+        'promoting-members',
+        'ban-lists',
+        'manage-squads',
+        'manage-teams'
+        ]);
+
 @endphp
 
 <aside class="w-64 shrink-0 flex flex-col bg-zinc-900">
@@ -20,11 +30,10 @@
             Dashboard
         </a>
 
-
-            <div class="w-full py-6" x-data="{ open:false }">
+            <div class="w-full py-6" x-data="{ open: @json($isManagementActive) }">
                 <x-ui.button type="button" variant="navigation" x-on:click="open = !open">Management</x-ui.button>
 
-                <ul class="flex flex-col w-full text-center gap-2 text-sm mt-4" x-show="open">
+                <ul class="flex flex-col w-full text-center gap-2 text-sm mt-4" x-show="open" x-transition>
                     <x-ui.link route-name="manage-members">Member Management</x-ui.link>
                     <x-ui.link route-name="promoting-members">Promoting Members</x-ui.link>
                     <x-ui.link route-name="ban-lists">Ban Lists</x-ui.link>

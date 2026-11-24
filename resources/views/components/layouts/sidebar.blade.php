@@ -7,18 +7,18 @@
     </div>
 
     <x-layouts.sidebar-nav>
-                <a class="border border-lime-400 py-2 text-white text-center rounded-2xl" href="{{ route('dashboard') }}">Dashboard</a>
+                <a class="border border-lime-400 py-2 text-white text-center rounded-2xl text-xl font-medium" href="{{ route('dashboard') }}">Dashboard</a>
 
 
             <div class="w-full py-6">
                 <x-ui.button type="button" variant="navigation">Management</x-ui.button>
 
-                <ul class="flex flex-col w-full text-center gap-2 text-sm">
-                    <x-ui.link href="{{ route('manage-members') }}">Member Management</x-ui.link>
-                    <x-ui.link href="{{ route('promoting-members') }}">Promoting Members</x-ui.link>
-                    <x-ui.link href="{{ route('ban-lists') }}">Ban Lists</x-ui.link>
-                    <x-ui.link href="{{ route('manage-squads') }}">Squad Management</x-ui.link>
-                    <x-ui.link href="{{ route('manage-teams') }}">Team Management</x-ui.link>
+                <ul class="flex flex-col w-full text-center gap-2 text-sm mt-4">
+                    <x-ui.link variant="primary" href="{{ route('manage-members') }}">Member Management</x-ui.link>
+                    <x-ui.link variant="secondary" href="{{ route('promoting-members') }}">Promoting Members</x-ui.link>
+                    <x-ui.link variant="secondary" href="{{ route('ban-lists') }}">Ban Lists</x-ui.link>
+                    <x-ui.link variant="secondary" href="{{ route('manage-squads') }}">Squad Management</x-ui.link>
+                    <x-ui.link variant="secondary" href="{{ route('manage-teams') }}">Team Management</x-ui.link>
                 </ul>
             </div>
     </x-layouts.sidebar-nav>

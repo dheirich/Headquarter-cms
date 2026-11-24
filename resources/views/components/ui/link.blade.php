@@ -1,14 +1,14 @@
 @props([
-    'variant' => 'primary',
+    'variant' => 'medium',
     'href' => '#'
 ])
 
 @php
-    $baseClasses = 'w-full border-b border-b-taupe-200/20 hover:text-cyan-400/50 transition duration-200';
+    $baseClasses = 'w-full first:border-t border-t-taupe-200/20 border-b border-b-taupe-200/20 hover:text-cyan-400/50 transition duration-200';
     $variantClasses = match($variant){
-        'primary' => 'border-t border-t-taupe-200/20 font-normal',
-        'secondary' => 'border border-taupe-200/20 font-semibold',
-        default => ''
+        'bold' => 'font-bold',
+        'medium' => 'font-medium',
+        default => 'font-normal'
     };
 @endphp
 

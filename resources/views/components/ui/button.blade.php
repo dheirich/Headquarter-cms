@@ -3,7 +3,7 @@
 ])
 
 @php
-$baseClasses = 'w-full rounded-lg py-2 font-normal transition text-center';
+$baseClasses = 'w-full rounded-lg py-2 font-medium text-xl transition text-center';
     $classes = match($variant){
         'primary' => 'text-zinc-950 bg-sky-600',
         'secondary' => 'text-zinc-400 bg-blue-700',

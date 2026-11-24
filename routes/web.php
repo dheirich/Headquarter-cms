@@ -12,28 +12,28 @@ Route::get('/', function () {
 Route::post('/auth/login', [LoginController::class, 'store'])
     ->name('auth.login');
 
-// Dashboard
-Route::view('/dashboard', 'dashboard')
-    ->name('dashboard')
-    ->middleware('auth');
 
-// Management Routes Testing
-Route::view('/manage-members', 'components.navigation_dashboard.manage-members')
-    ->name('manage-members')
-    ->middleware('auth');
+Route::middleware('auth')->group(function () {
 
-Route::view('/promoting-members', 'components.navigation_dashboard.promoting-members')
-    ->name('promoting-members')
-    ->middleware('auth');
+    // Dashboard
+    Route::view('/dashboard', 'dashboard')
+        ->name('dashboard');
 
-Route::view('/ban-lists', 'components.navigation_dashboard.ban-lists')
-    ->name('ban-lists')
-    ->middleware('auth');
 
-Route::view('/manage-squads', 'components.navigation_dashboard.manage-squads')
-    ->name('manage-squads')
-    ->middleware('auth');
+    // Management Routes Testing
 
-Route::view('/manage-teams', 'components.navigation_dashboard.manage-teams')
-    ->name('manage-teams')
-    ->middleware('auth');
+    Route::view('/manage-members', 'components.navigation_dashboard.manage-members')
+        ->name('manage-members');
+
+    Route::view('/promoting-members', 'components.navigation_dashboard.promoting-members')
+        ->name('promoting-members');
+
+    Route::view('/ban-lists', 'components.navigation_dashboard.ban-lists')
+        ->name('ban-lists');
+
+    Route::view('/manage-squads', 'components.navigation_dashboard.manage-squads')
+        ->name('manage-squads');
+
+    Route::view('/manage-teams', 'components.navigation_dashboard.manage-teams')
+        ->name('manage-teams');
+});

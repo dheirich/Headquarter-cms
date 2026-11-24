@@ -21,15 +21,15 @@
         </a>
 
 
-            <div class="w-full py-6">
-                <x-ui.button type="button" variant="navigation">Management</x-ui.button>
+            <div class="w-full py-6" x-data="{ open:false }">
+                <x-ui.button type="button" variant="navigation" x-on:click="open = !open">Management</x-ui.button>
 
-                <ul class="flex flex-col w-full text-center gap-2 text-sm mt-4">
-                    <x-ui.link route-name="manage-members" variant="primary" href="{{ route('manage-members') }}">Member Management</x-ui.link>
-                    <x-ui.link route-name="promoting-members" variant="secondary" href="{{ route('promoting-members') }}">Promoting Members</x-ui.link>
-                    <x-ui.link route-name="ban-lists" variant="secondary" href="{{ route('ban-lists') }}">Ban Lists</x-ui.link>
-                    <x-ui.link route-name="manage-squads" variant="secondary" href="{{ route('manage-squads') }}">Squad Management</x-ui.link>
-                    <x-ui.link route-name="manage-teams" variant="secondary" href="{{ route('manage-teams') }}">Team Management</x-ui.link>
+                <ul class="flex flex-col w-full text-center gap-2 text-sm mt-4" x-show="open">
+                    <x-ui.link route-name="manage-members">Member Management</x-ui.link>
+                    <x-ui.link route-name="promoting-members">Promoting Members</x-ui.link>
+                    <x-ui.link route-name="ban-lists">Ban Lists</x-ui.link>
+                    <x-ui.link route-name="manage-squads">Squad Management</x-ui.link>
+                    <x-ui.link route-name="manage-teams">Team Management</x-ui.link>
                 </ul>
             </div>
     </x-layouts.sidebar-nav>

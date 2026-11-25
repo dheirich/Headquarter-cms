@@ -10,10 +10,14 @@
     <title>Headquarter | {{ $title }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-zinc-800 flex flex-row min-h-screen text-white">
+<body class="bg-black flex flex-row min-h-screen text-white">
 
 <x-layouts.sidebar/>
-<main class="flex-1">{{$slot}}</main>
+
+<div class="flex-1 min-w-0 flex flex-col">
+    <x-layouts.navbar :username="auth()->user()->name"/>
+    <main class="flex-1">{{$slot}}</main>
+</div>
 
 </body>
 </html>

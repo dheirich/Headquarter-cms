@@ -2,10 +2,10 @@
     $isActive = request()->routeIs('dashboard');
 @endphp
 
-<aside class="w-64 shrink-0 flex flex-col bg-zinc-900">
+<aside class="w-64 shrink-0 flex flex-col bg-zinc-950">
 
     <div class="mt-8 w-full flex items-center flex-col gap-2 px-4  border-b border-white/10 pb-4">
-        <x-ui.logo src="{{ asset('images/headquarter-emblem-vector.svg') }}" alt="CLANHQ Headdquarter Logo" />
+        <x-ui.logo src="{{ asset('images/headquarter-emblem-vector.svg') }}" alt="CLANHQ Headquarter Logo" />
         <span class="text-center text-white uppercase tracking-wide text-xl font-medium">Headquarter</span>
         <span class="text-center text-white/50 uppercase tracking-widest text-xs">Clan Management System</span>
     </div>

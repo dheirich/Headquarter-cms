@@ -12,8 +12,11 @@ Route::get('/', function () {
 Route::post('/auth/login', [LoginController::class, 'store'])
     ->name('auth.login');
 
-
 Route::middleware('auth')->group(function () {
+
+    //Logout
+    Route::post('/auth/logout', [LoginController::class, 'destroy'])
+        ->name('auth.logout');
 
     // Dashboard
     Route::view('/dashboard', 'dashboard')

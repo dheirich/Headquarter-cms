@@ -1,11 +1,11 @@
 @props([
-    'menu-id',
+    'menuId',
     'label',
-    'routes' => []
+    'items' => []
 ])
 
 @php
-    $isActiveRoutes = request()->routeIs($routes);
+    $isActiveRoutes = request()->routeIs(array_values($items));
 @endphp
 
 
@@ -20,6 +20,10 @@
     </x-ui.button>
 
     <ul class="flex flex-col w-full text-center gap-2 text-sm mt-4" id="{{ $menuId }}" x-show="open" x-transition x-cloak>
-        {{ $slot }}
+        @foreach($items as $itemLabel => $routeName)
+            <x-ui.link :route-name="$routeName">
+                {{ $itemLabel }}
+            </x-ui.link>
+        @endforeach
     </ul>
 </div>

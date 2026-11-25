@@ -19,12 +19,13 @@
             Dashboard
         </a>
 
-        <x-ui.nav-group menu-id="management-menu" label="Management" :routes="['manage-members', 'manage-squads', 'manage-teams', 'promoting-members', 'ban-lists']">
-            <x-ui.link route-name="manage-members">Member Management</x-ui.link>
-            <x-ui.link route-name="manage-teams">Team Management</x-ui.link>
-            <x-ui.link route-name="manage-squads">Squad Management</x-ui.link>
-            <x-ui.link route-name="promoting-members">Promoting Management</x-ui.link>
-            <x-ui.link route-name="ban-lists">Ban Management</x-ui.link>
+        <x-ui.nav-group menu-id="management-menu"
+                        label="Management"
+                        :items="['Member Management' => 'manage-members',
+                                 'Squad Management' => 'manage-squads',
+                                 'Team Management' => 'manage-teams',
+                                 'Promote Members' => 'promoting-members',
+                                 'Ban Lists' => 'ban-lists']">
         </x-ui.nav-group>
 
     </x-layouts.sidebar-nav>

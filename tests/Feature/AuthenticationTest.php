@@ -2,8 +2,6 @@
 
 namespace Tests\Feature;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class AuthenticationTest extends TestCase
@@ -18,6 +16,7 @@ class AuthenticationTest extends TestCase
         // Act
         $response = $this->get('/dashboard');
         // Assert
-        $response->assertStatus(302);
+        $response->assertStatus(302)
+            ->assertRedirect(route('login'));
     }
 }

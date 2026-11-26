@@ -11,10 +11,13 @@ class AuthenticationTest extends TestCase
     /**
      * A basic feature test example.
      */
-    public function test_example(): void
+    public function test_guest_is_redirected_from_dashboard(): void
     {
-        $response = $this->get('/');
-
-        $response->assertStatus(200);
+        // Arrange
+        $this->assertGuest();
+        // Act
+        $response = $this->get('/dashboard');
+        // Assert
+        $response->assertStatus(302);
     }
 }
